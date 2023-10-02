@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    color:white;
+}
+button{
+    background-color: transparent;
+    border: 0;
+}
+.img{
+    width:60px;
+    border: 2px solid white;
+    border-radius: 60px;
+    padding:20px;
+}
+.result{
+    font-family: Arial;
+    font-size:25px;
+    font-weight: bold;
+    margin-top:30px;
+}
+.reset,.autoplay{
+    color:black;
+    width:90px;
+    height:30px;
+    font-size:16px;
+    font-weight: bold;
+    font-family: Arial;
+    background-color:white;
+    margin-top:20px;
+}
+.move-img{
+    width:50px;
+}
+.moves{
+    margin-top: 50px;
+}
+.livescore{
+    font-size:18px;
+    font-family: Arial;
+    margin-top:30px;
+}
+.js-yes{
+    background-color: white;
+}
+.js-no{
+    background-color: white;
+}

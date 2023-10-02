@@ -1,0 +1,50 @@
+body{
+    background-color:black;
+}
+.js-title{
+    color:white;
+    font-family:Arial;
+}
+.p1{
+    color:white;
+}
+.p1{
+    font-size:25px;
+    font-family:Arial;
+    margin:0;
+}
+.js-num{
+    width:40px;
+    height:40px;
+    border:0;
+    border-radius:20px;
+    background-color:rgb(118, 112, 112);
+    font-weight:bold;
+    color:white;
+    margin-right:5px;
+}
+.js-op{
+    width:40px;
+    background-color:orange;
+    border:0;
+    height:40px;
+    border-radius:20px;
+    color:white;
+    font-size:18px;
+    font-weight: bold;
+}
+.js-clear{
+    width:40px;
+    height:40px;
+    border:0;
+    border-radius:20px;
+    font-size:11px;
+    font-weight: bold;
+    background-color:rgb(118, 112, 112);
+    color:white;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

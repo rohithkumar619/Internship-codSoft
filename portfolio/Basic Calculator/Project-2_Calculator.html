@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            .js-title{
+                color:white;
+                font-family:Arial;
+            }
+            .p1{
+                color:white;
+                z-index:100;
+                color:black;
+            }
+            .p1{
+                font-size:25px;
+                font-family:Arial;
+                margin:0;
+                width:180px;
+                background-color:white;
+                height:40px;
+            }
+            .js-num{
+                width:40px;
+                height:40px;
+                border:0;
+                border-radius:20px;
+                background-color:rgb(118, 112, 112);
+                font-weight:bold;
+                color:white;
+                margin-right:5px;
+            }
+            .js-op{
+                width:40px;
+                background-color:orange;
+                border:0;
+                height:40px;
+                border-radius:20px;
+                color:white;
+                font-size:18px;
+                font-weight: bold;
+            }
+            .js-clear{
+                width:40px;
+                height:40px;
+                border:0;
+                border-radius:20px;
+                font-size:11px;
+                font-weight: bold;
+                background-color:rgb(118, 112, 112);
+                color:white;
+            }
+            .middle-js{
+                display:flex;
+                align-items: center;
+                flex-direction:column;
+                margin-top:100px;
+                border-radius:5px;
+                background-color:grey;
+                width:250px;
+            }
+            .center{
+                display:flex;
+                align-items: center;
+                justify-content:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background">
+            <div class="center">
+                <div class="middle-js">
+                    <h1 class="js-title">Calculator</h1>
+                    <p class="p1"></p>
+                    <p>
+                        <button class="js-num" onclick="
+                        updateCalculation('1');
+                        ">1</button>
+        
+                        <button class="js-num" onclick="
+                        updateCalculation('2');
+                        ">2</button>
+        
+                        <button class="js-num" onclick="
+                        updateCalculation('3');
+                        ">3</button>
+        
+                        <button class="js-op" onclick="
+                        updateCalculation('+');
+                        ">+</button>
+                    </p>    
+                    <p>
+                        <button class="js-num" onclick="
+                        updateCalculation('4');
+                        ">4</button>
+        
+                        <button class="js-num" onclick="
+                        updateCalculation('5');
+                        ">5</button>
+        
+                        <button class="js-num" onclick="
+                        updateCalculation('6');
+                        ">6</button>
+        
+                        <button class="js-op" onclick="
+                        updateCalculation('-');
+                        ">-</button>
+                    </p>
+        
+                    <p>
+                        <button class="js-num" onclick="
+                        updateCalculation('7');
+                        ">7</button>
+        
+                        <button class="js-num" onclick="
+                        updateCalculation('8');
+                        ">8</button>
+        
+                        <button class="js-num" onclick="
+                        updateCalculation('9');
+                        ">9</button>
+        
+                        <button class="js-op" onclick="
+                        updateCalculation('*');
+                        ">*</button>
+                </p>
+        
+                <p>
+                        <button class="js-num" onclick="
+                        updateCalculation('0');
+                        ">0</button>
+        
+                        <button class="js-num" onclick="
+                        updateCalculation('.');
+                        ">.</button>
+        
+                        <button class="js-num" onclick="
+                        result = eval(result);
+                        document.querySelector('.p1').innerHTML=`${result}`;
+                        localStorage.setItem('result',result);
+                        ">=</button>
+        
+                        <button class="js-op" onclick="
+                        updateCalculation('/');
+                        ">/</button>
+                </p>
+                        <button class="js-clear" onclick="
+                        result = '';
+                        document.querySelector('.p1').innerHTML=`${result}`;
+                        localStorage.removeItem('result');
+                        ">Clear</button>
+                </div>
+            </div>
+        </div>
+        <script src="Project-2.js"></script>
+    </body>
+</html>

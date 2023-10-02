@@ -1,0 +1,40 @@
+@media (min-width:1200px){
+    .side-bar{
+       width:200px;
+    }
+}
+@media (min-width:1200px){
+    .side{
+        width:150px;
+        display:flex;
+        flex-direction:row;
+        justify-content:start;
+        align-items: center;
+        margin-top:0px;
+        margin-bottom:0px;
+        height:30px;
+    }
+}
+@media (min-width:1200px){
+    .img1{
+        display:flex;
+        flex-direction:column;
+        justify-content:start;
+        align-items: start;
+    }
+}
+@media (min-width:1200px){
+    .para{
+        margin-top: 18px;
+        margin-left:23px;
+        font-size:13px;
+    }
+}
+@media (min-width:1200px){
+    .Grid_video{
+        margin-left:210px;
+        padding-left:0;
+    }
+}
+
+

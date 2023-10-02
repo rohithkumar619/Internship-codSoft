@@ -1,0 +1,49 @@
+body{
+    font-family: Arial;
+}
+.Title{
+    font-size:20px;
+    font-weight: bold;
+}
+.js-divv{
+    display: grid;
+    grid-template-columns:200px 150px 100px;   
+    column-gap:10px;
+    margin-bottom: 10px;
+}
+.js-div{
+    display: grid;
+    grid-template-columns:200px 150px 100px;   
+    column-gap:10px;
+    row-gap:10px;
+    align-items: center;
+}
+.js-button{
+    background-color: green;
+    border:0;
+    color:white;
+    height:35px;
+}
+.js-delete{
+    background-color: rgb(180, 26, 26);
+    border: 0;
+    height:35px;
+    color:white;
+}
+.js-date{
+    font-size:15px;
+    padding-right:5px;
+    padding-left:5px;
+}
+.js-input{
+    padding-left:5px;
+    font-size:14px;
+}
+.js-name{
+    padding-left:5px;
+    font-size:16px;
+}
+.js-dueDate{
+    padding-left:5px;
+    font-size:16px;
+}

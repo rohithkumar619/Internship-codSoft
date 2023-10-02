@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Heads & Tails</title>
+    </head>
+    <link rel="stylesheet" href="Project-3.css">
+    <body>
+        <h1 class="js-title">HEADS & TAILS</h1>
+        <div class="Arrange">
+            <div class="Adjust">
+                <button class="js-b1" onclick=" 
+                compGuess();
+                userGuess('Heads');
+                ">Heads
+                </button>
+
+                <button class="js-b2" onclick="
+                compGuess();
+                userGuess('Tails');
+                ">Tails
+                </button>
+            </div>
+
+            <p class="score"></p>
+
+            <p class="js-move"></p>
+
+            <p class="js-result"></p>
+
+        <button class="js-reset" onclick="
+        score.wins= 0;
+        score.losses=0;
+        updateScore();
+        localStorage.removeItem('score');
+        ">reset
+        </button>
+        </div>
+
+        <script src="Project-3.js"></script>
+    </body>
+</html>
